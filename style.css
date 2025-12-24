@@ -710,6 +710,31 @@ body {
 }
 
 @media (max-width: 600px) {
+    .jumping-name {
+        font-size: 2.8rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-minimal-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -722,4 +747,191 @@ body {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* --- Mobile Responsiveness Fixes (max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+
+    /* Container & General Layout */
+    .container {
+        padding: 0 1.25rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .section {
+        padding: 4rem 0 !important;
+    }
+
+    /* Heading & Typography Fixes */
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    h3 {
+        font-size: 1.3rem !important;
+        word-wrap: break-word;
+    }
+
+    p,
+    .about-card p,
+    .timeline-content p,
+    .project-info p,
+    .item-details {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    /* Career Objective / About Card */
+    .about-card {
+        padding: 1.5rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Project Cards & Grid */
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .project-card {
+        padding: 1.5rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Timeline / Education */
+    .timeline {
+        padding-left: 1.5rem !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .timeline-content {
+        padding: 1.25rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .timeline-dot {
+        left: -1.85rem !important;
+    }
+
+    /* Skills Section */
+    .skills-minimal-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .minimal-skill-item {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .skill-category {
+        padding: 1.5rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        padding: 1.5rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .contact-form {
+        gap: 1rem !important;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem !important;
+        padding: 0.8rem !important;
+    }
+
+    /* Universal Fix for Overflowing Elements */
+    * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+}
+
+/* --- URL & Link Styling Improvements --- */
+.project-actions {
+    margin-top: 1.5rem;
+}
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.6rem 1.2rem;
+    background: var(--primary);
+    color: white !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid var(--primary);
+}
+
+.btn-link:hover {
+    background: transparent;
+    color: var(--primary) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--hero-glow);
+}
+
+.btn-link i {
+    font-size: 0.8rem;
+}
+
+.footer-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+    word-break: break-all;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Professional Overflow Handling for any potential long URLs */
+a,
+span,
+p,
+h1,
+h2,
+h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* For extremely long URLs that might still break layout */
+.clean-url-container {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: bottom;
 }
