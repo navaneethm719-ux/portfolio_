@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneeth | Portfolio & Resume</title>
+    <meta name="description"
+        content="Portfolio of Navaneeth - Diploma Student in IT, seeking higher studies in Engineering. Featuring academic projects and technical skills.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Navaneeth<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+                <li><a href="resume.html" class="resume-btn">Resume</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="jumping-name" id="jumping-name">
+                    <!-- Javascript will populate characters -->
+                    Navaneeth
+                </div>
+                <p class="hero-description">
+                    Aspiring Engineer and Developer focused on building innovative solutions. Currently pursuing my
+                    final semester at Sri Ramakrishna Mission Vidyalaya Polytechnic College.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="resume.html" target="_blank" class="btn resume-dl-btn"><i class="fas fa-download"></i>
+                        Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="image-wrapper">
+                    <img src="avatar.jpg" alt="Navaneeth Portfolio Image" class="hero-image">
+                </div>
+                <div class="blob"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Career Objective</h2>
+            <div class="about-card glass">
+                <p>
+                    Aspiring Information Technology professional with a strong foundation in application development and
+                    programming. Dedicated to academic excellence and continuous learning, seeking to pursue Higher
+                    Studies in Engineering to further enhance technical expertise and contribute to innovative
+                    technological solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="date">Present</span>
+                        <h3>Diploma in Information Technology</h3>
+                        <p class="institution">Sri Ramakrishna Mission Vidyalaya Polytechnic College, Coimbatore</p>
+                        <p class="score">Current Status: Pursuing (Final Semester) | <strong>82% Overall</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="date">Completed</span>
+                        <h3>SSLC (10th Standard)</h3>
+                        <p class="institution">Nilgiris Matriculation Higher Secondary School, Lovedale, Ooty</p>
+                        <p class="score"><strong>66% Overall</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="date">Foundation</span>
+                        <h3>Primary & Middle Schooling</h3>
+                        <p>Archangels Nursery and Primary School (KG-3rd)</p>
+                        <p>Nilgiris Matriculation Higher Secondary School (4th onwards)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Expertise</h2>
+            <div class="skills-minimal-grid">
+                <div class="minimal-skill-item">
+                    <div class="skill-label">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar-outer">
+                        <div class="skill-bar-inner" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="minimal-skill-item">
+                    <div class="skill-label">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar-outer">
+                        <div class="skill-bar-inner" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="minimal-skill-item">
+                    <div class="skill-label">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                    <div class="skill-bar-outer">
+                        <div class="skill-bar-inner" data-width="65%"></div>
+                    </div>
+                </div>
+                <div class="minimal-skill-item">
+                    <div class="skill-label">
+                        <span class="skill-name">Android Studio</span>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-bar-outer">
+                        <div class="skill-bar-inner" data-width="60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Academic Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-info">
+                        <h3>Virtual Classroom Application</h3>
+                        <p>A comprehensive academic platform designed to facilitate online learning and streamlined
+                            class management. Features include user roles, course organization, and interactive
+                            communication tools.</p>
+                        <div class="project-tech">
+                            <span>Android Studio</span>
+                            <span>Java</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-info">
+                        <h3>Ludo Game Application</h3>
+                        <p>An interactive digital implementation of the classic board game, emphasizing robust game
+                            logic, real-time state management, and an engaging user interface.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Game Logic</span>
+                            <span>UI Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-item glass">
+                    <div class="cert-icon">📜</div>
+                    <p>Cisco Networking Certificate</p>
+                </div>
+                <div class="cert-item glass">
+                    <div class="cert-icon">📱</div>
+                    <p>Mobile Application Development (Extra Course)</p>
+                </div>
+                <div class="cert-item glass">
+                    <div class="cert-icon">💻</div>
+                    <p>IBM SkillBuild Certificate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container glass">
+                <form id="contact-me-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What is this regarding?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Navaneeth</h3>
+                    <p>Diploma Student - IT</p>
+                    <div class="contact-details">
+                        <p>📧 navaneethm719@gmail.com</p>
+                        <p>📞 +91 6381547344</p>
+                        <p>📍 The Nilgiris, Tamil Nadu</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Socials</h3>
+                    <div class="social-links-footer">
+                        <a href="https://instagram.com/_navanee_" target="_blank" class="instagram-link"
+                            title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>@_navanee_</span>
+                        </a>
+                        <a href="https://wa.me/916381547344" target="_blank" class="whatsapp-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>6381547344</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Navaneeth. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
